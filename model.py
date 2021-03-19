@@ -20,7 +20,7 @@ regressor = LinearRegression()
 
 regressor.fit(X_train, y_train)
 
-y_pred = regressor.predict(X_test)
+prediction = regressor.predict(X_test)
 
 
 pickle.dump(regressor,open('model.pkl', 'wb'))
